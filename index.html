@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="fav.png">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    <!-- hearder -->
+    <header class="header"> 
+        <div class="header2"> 
+    
+            <nav class="navbar2">
+                
+                <a href="#"><i class='bx bxl-meta'          style=" right: 10%; 
+                font-size: 1.9rem; "></i></a>
+                <a href="#"><i class='bx bxl-twitter'       style=" right: 10%; 
+                font-size: 1.9rem; "></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' style=" right: 10%; 
+                font-size: 1.9rem; "></i></a>
+                <a href="#" ><i class='bx bxl-gmail'        style=" right: 10%; 
+                font-size: 1.9rem; "></i></a>
+            </nav>
+        </div> 
+
+        <a href="" id="logo"><img src="logo-3.png" class="logo-img" ></a>
+        
+
+        <nav class="navbar">
+            
+            <a href="start.html" >home</a>
+            <a href="sho.html">shopping</a>
+
+            <div class="dropdown">
+                <a class="dropbtn" href="blog.html">Blog
+                </a>
+                <div class="dropdown-content">
+                  <a href="blog-1.html">Blog 1</a>
+                  <a href="blog-2.html">Blog 2</a>
+                  <a href="blog-3.html">Blog 3</a>
+                </div>
+             </div>
+
+            <a href="class.html">Class & Program</a>
+            <a href="gallery.html"  >Gallery</a>
+            <a href="form.html"  style="color: #5EB6E1;">form</a>
+            <a href="#"><i class='bx bx-search-alt bx-burst bx-rotate-90' style=" right: 10%; 
+            font-size: 2rem; "></i></a>
+        </nav>
+
+    
+</header>
+
+
+
+<body style="background-image: url('eq-bac.jpg'); width: 100%;
+    height: 100vh;
+    background-size: cover;
+    justify-content: center  ;
+    background-repeat: no-repeat;  position: relative;" >
+  
+  
+  <form action="" onsubmit="return(validate_data())">
+            
+            <table  style=" background-color:   #6eb1d33d;
+            margin-top:50px;padding: 20px;" cellspacing="10px" width="80%"  cellpadding="5PX">
+            
+                <tr>
+                    <td style="font-size: 40px; color: #5EB6E1;" width="33%"><u>Registration</u></td>
+                    
+                </tr>
+                <tr>
+                    <td style="font-size: 20px;">person details</td><hr>
+                </tr>
+
+                <tr>
+                    <td>full name
+                        <br>
+                        <input type="text" name="n1" id="fn" placeholder="enter your full name">
+                        <span id="fn1_error"></span> <br>
+                    </td>
+                    <td>date of bearth
+                        <br><input type="text" id="fn1"  placeholder="enter your dob">
+                        <span id="fn2_error"></span> <br>
+                    </td>
+                    <td>email
+                        <br>
+                        <input type="email" id="fn2" placeholder="enter your email">
+                        <span id="fn3_error"></span> <br>
+                    </td>
+                    
+                </tr>
+              
+            <tr>
+                <td>mobile no<br>
+                
+                      <input type="number"  id="fn3" placeholder="enter your no"> 
+                      <span id="fn4_error"></span> <br>
+                    </td>    
+                <td>gender<br>
+                <input type="text" id="fn4" placeholder="enter your gender">
+                <span id="fn5_error"></span> <br>
+                </td>
+                <td>occupation<br>
+                <input type="text"  placeholder="enter your occupation"></td>
+            </tr>
+            
+
+            <tr>
+                <td style="font-size: 20px;"><u>identity details</u></td>
+            </tr>
+            <tr>
+                <td>age<br>
+                <input type="number"  id="fn5" placeholder="enter your age">
+                <span id="fn6_error"></span> <br>
+                </td>
+                <td>height<br>
+                <input type="number"   placeholder="enter your height">
+                </td>
+                <td>weight<br>
+                <input type="number"  placeholder="enter your weight">
+                </td>
+            </tr>
+            
+
+            <tr>
+               <td> personal number<br>
+               <input type="number" id="fn6"  placeholder="enter your number">
+               <span id="fn7_error"></span> <br>
+                </td>
+               <td>membership <br>
+               <input type="text"  placeholder="enter yes or no ">
+               </td>
+               <td>join date <br>
+               <input type="date"  placeholder="enter date">
+               </td>
+            </tr>
+            
+          
+
+            <td><input type="submit" value="submit" name="sub"  id="sub1" style="background-color: rgb(129, 149, 113); height: 30px ; width: 90px;"></td>
+            <a href="first.html"></a>
+            
+        
+            </table>
+        </form>
+          
+     
+
+</body>
+</html>
+      
+
+<script type="text/javascript">
+    //validate the form for empty fields
+      function validate_data(){
+
+    var fn_err1 = document.getElementById("fn1_error");
+    var fn_err2 = document.getElementById("fn2_error");
+    var fn_err3 = document.getElementById("fn3_error");
+    var fn_err4 = document.getElementById("fn4_error");
+    var fn_err5 = document.getElementById("fn5_error");
+    var fn_err6 = document.getElementById("fn6_error");
+    var fn_err7 = document.getElementById("fn7_error");
+
+    
+
+    var fn1 = document.getElementById("fn").value;
+    var fn2 = document.getElementById("fn1").value;
+    var fn3 = document.getElementById("fn2").value;
+    var fn4 = document.getElementById("fn3").value;
+    var fn5 = document.getElementById("fn4").value;
+    var fn6 = document.getElementById("fn5").value;
+    var fn7 = document.getElementById("fn6").value;
+
+
+    if(fn1==""){
+        fn_err1.innerHTML="fullname required";
+        fn_err1.style.color="red";
+        var vr_name = false;
+    }
+    else{
+        var pattern=/^[a-zA-Z0-9]{10}$/;
+        var ans=pattern.test(fn1);
+        if(ans){
+        fn_err1.innerHTML="";
+        var vr_name = true;
+        }else{
+            fn_err1.innerHTML="only char and limited size";
+            fn_err1.style.color="red";
+            var vr_name = false;
+        }
+    }
+
+    if(fn2==""){
+        fn_err2.innerHTML="Enter birthdate ";
+        fn_err2.style.color="red";
+        var vr_date = false;
+    }
+    else{
+        var pattern=/^\d{4}-\d{2}-\d{2}$/;
+        var ans=pattern.test(fn2);
+        if(ans){
+        fn_err2.innerHTML="";
+        var vr_date = true;
+        }else{
+            fn_err2.innerHTML="limited size";
+            fn_err2.style.color="red";
+            var vr_date = false;
+        }
+    }
+
+    if(fn3==""){
+        fn_err3.innerHTML="Enter email ";
+        fn_err3.style.color="red";
+        var vr_email = false;
+    }
+    else{
+        var pattern=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        var ans=pattern.test(fn3);
+        if(ans){
+        fn_err3.innerHTML="";
+        var vr_email = true;
+        }else{
+            fn_err3.innerHTML="limited size";
+            fn_err3.style.color="red";
+            var vr_email = false;
+        }
+    }
+
+
+    if(fn4==""){
+        fn_err4.innerHTML="Enter mobile no:";
+        fn_err4.style.color="red";
+        var vr_mono = false;
+    }
+    else{
+        var pattern=/^[0-9]{10}$/;
+        var ans=pattern.test(fn4);
+        if(ans){
+        fn_err4.innerHTML="";
+        var vr_mono = true;
+        }else{
+            fn_err4.innerHTML="limited size";
+            fn_err4.style.color="red";
+            var vr_mono = false;
+        }
+    }
+
+    if(fn5==""){
+        fn_err5.innerHTML="Enter gender:";
+        fn_err5.style.color="red";
+        var vr_gender = false;
+    }
+    else{
+        var pattern=/^(?:male|female|other)$/;
+        var ans=pattern.test(fn5);
+        if(ans){
+        fn_err5.innerHTML="";
+        var vr_gender = true;
+        }else{
+            fn_err5.innerHTML="only you can write male female & others`";
+            fn_err5.style.color="red";
+            var vr_gender = false;
+        }
+    }
+    if(fn6==""){
+        fn_err6.innerHTML="Enter age:";
+        fn_err6.style.color="red";
+        var vr_age = false;
+    }
+    else{
+        var pattern=/^[0-9]{2}$/;
+        var ans=pattern.test(fn6);
+        if(ans){
+        fn_err6.innerHTML="";
+        var vr_age = true;
+        }else{
+            fn_err6.innerHTML="limited size";
+            fn_err6.style.color="red";
+            var vr_age = false;
+        }
+    }
+ 
+    if(fn7==""){
+        fn_err7.innerHTML="Enter mobile no:";
+        fn_err7.style.color="red";
+        var vr_pmono = false;
+    }
+    else{
+        var pattern=/^[0-9]{10}$/;
+        var ans=pattern.test(fn7);
+        if(ans){
+        fn_err7.innerHTML="";
+        var vr_pmono = true;
+        }else{
+            fn_err7.innerHTML="limited size";
+            fn_err7.style.color="red";
+            var vr_pmono = false;
+        }
+    }
+
+    if(vr_name==true && vr_mono==true && vr_email==true && vr_gender==true && vr_age==true && vr_pmono) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+</script>
